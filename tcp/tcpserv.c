@@ -36,15 +36,24 @@ int main(int argc,char **argv)
     bind(listenfd,(SA *)&servaddr, sizeof(servaddr));
     listen(listenfd,LISTENQ);
     printf("start to listen at port %d \n",SERV_PORT);
+    // process child process close
+    signal(SIGCHLD,sig_chld);
     for(;;){
         clilen= sizeof(cliaddr);
-        connfd=accept(listenfd,(SA *)&cliaddr,&clilen);
-        if((childpid=fork())==0){ /*child process*/
-             close(listenfd);
-             str_echo(connfd);
-             exit(0);
+        if((connfd=accept(listenfd,(SA *)&cliaddr,&clilen))<0){
+            // process interrupt
+           if(errno==EINTR)
+               continue;
+            else
+               printf("accept error");
+        }else {
+            if ((childpid = fork()) == 0) { /*child process*/
+                close(listenfd);
+                str_echo(connfd);
+                exit(0);
+            }
+            close(connfd);
         }
-        close(connfd);
     }
 }
 
