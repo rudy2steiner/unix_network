@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/socket.h>
+#include <sys/select.h>
 #include <sys/wait.h>
 #include <netinet/in.h>
 #include <signal.h>

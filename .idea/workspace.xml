@@ -10,11 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd5a6c86-eefe-449d-98aa-1fe39a212d31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/signal.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nio/nioclient.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/read.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/read.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tcp/tcp.h" afterPath="$PROJECT_DIR$/tcp/tcp.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tcp/tcpserv.c" afterPath="$PROJECT_DIR$/tcp/tcpserv.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tcp/tcpclient.c" afterPath="$PROJECT_DIR$/tcp/tcpclient.c" />
     </list>
     <ignored path="ansi_c.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="tcpserv.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/tcpserv.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state relative-caret-position="705">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -57,14 +58,14 @@
       <file leaf-file-name="tcp.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/tcp.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sigchldwait.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sigchldwait.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/sigchldwait.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -87,9 +88,43 @@
       <file leaf-file-name="tcpclient.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/tcpclient.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding>
+                <element signature="e#38#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nioclient.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nio/nioclient.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tcp/read.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tcp/read.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <marker date="1537286050762" expanded="true" signature="177:523" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +146,14 @@
         <option value="$PROJECT_DIR$/tcp/singal.c" />
         <option value="$PROJECT_DIR$/tcp/signal.c" />
         <option value="$PROJECT_DIR$/tcp/sigchldwait.c.cpp" />
-        <option value="$PROJECT_DIR$/tcp/tcp.h" />
         <option value="$PROJECT_DIR$/tcp/tcpserv.c" />
+        <option value="$PROJECT_DIR$/tcp/read.h.h" />
+        <option value="$PROJECT_DIR$/tcp/read.c.cpp" />
+        <option value="$PROJECT_DIR$/tcp/read.h" />
+        <option value="$PROJECT_DIR$/tcp/read.c" />
+        <option value="$PROJECT_DIR$/tcp/tcpclient.c" />
+        <option value="$PROJECT_DIR$/tcp/tcp.h" />
+        <option value="$PROJECT_DIR$/nio/nioclient.c" />
       </list>
     </option>
   </component>
@@ -124,8 +165,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="530" />
-    <option name="y" value="138" />
+    <option name="x" value="752" />
+    <option name="y" value="104" />
     <option name="width" value="1390" />
     <option name="height" value="942" />
   </component>
@@ -183,6 +224,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tcp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ansi_c" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ansi_c" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,18 +434,18 @@
       <workItem from="1536595047731" duration="12870000" />
       <workItem from="1537085163252" duration="4416000" />
       <workItem from="1537101516407" duration="6845000" />
-      <workItem from="1537281809596" duration="6000" />
+      <workItem from="1537281809596" duration="6872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25379000" />
+    <option name="totallyTimeSpent" value="32245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="530" y="138" width="1390" height="942" extended-state="0" />
+    <frame x="752" y="104" width="1390" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1410072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1467626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06920415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -469,7 +524,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#38#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -517,7 +574,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#38#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -549,34 +608,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/tcp.h">
+    <entry file="file://$PROJECT_DIR$/tcp/sigchldwait.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/read.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <marker date="1537286050762" expanded="true" signature="177:523" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/tcpclient.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/read.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp/tcpserv.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="705">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/tcpclient.c">
+    <entry file="file://$PROJECT_DIR$/tcp/tcp.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/sigchldwait.c">
+    <entry file="file://$PROJECT_DIR$/nio/nioclient.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="387">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
