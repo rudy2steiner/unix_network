@@ -7,12 +7,11 @@
 
 Sigfunc *signal(int signo,Sigfunc *func)
 {
-  struct signation act,oact;
-
+  struct sigaction act,oact;
     act.sa_handler=func;
     sigemptyset(&act.sa_mask);
     act.sa_flags=0;
-    if(signo==SIGALARM){
+    if(signo==SIGALRM){
     #ifdef SA_INTERRUPT
        act.sa_flags|=SA_INTERRUPT;
     #endif
@@ -21,7 +20,7 @@ Sigfunc *signal(int signo,Sigfunc *func)
         act.sa_flags|=SA_RESTART;        /*SunOS 4.x*/
     #endif
     }
-    if(signation(signo,&act,&oact)<0)
+    if(sigaction(signo,&act,&oact)<0)
         return (SIG_ERR);
     return (oact.sa_handler);
 
