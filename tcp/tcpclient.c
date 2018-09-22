@@ -7,6 +7,8 @@
 
 void str_cli(FILE *fd,int sockfd){
     char sendline[MAXLINE],recvline[MAXLINE];
+
+    // will close when read null from console
     while(fgets(sendline,MAXLINE,fd)!=NULL){
          write(sockfd,sendline,strlen(sendline));
          if(readline(sockfd,recvline,MAXLINE)==0){

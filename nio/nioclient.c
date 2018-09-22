@@ -23,22 +23,34 @@ void nio_cli(FILE *fd,int sockfd){
 
     char sendline[MAXLINE],recvline[MAXLINE];
     int maxfdp1;
+    int stdineof=0;
     fd_set rset;
     for(;;){
-        FD_SET(fileno(fd),&rset);
+        if(stdineof==0)
+            FD_SET(fileno(fd),&rset);
         FD_SET(sockfd,&rset);
         maxfdp1=max(fileno(fd),sockfd)+1;
         select(maxfdp1,&rset,NULL,NULL,NULL);
         if(FD_ISSET(sockfd,&rset)){
             if(readline(sockfd,recvline,MAXLINE)==0){
-                printf("str_cli:server terminated prematurely");
-                exit(1);
+                if(stdineof==1){
+                    return;
+                }else {
+                    printf("str_cli:server terminated prematurely");
+                    exit(1);
+                }
             }
             fputs(recvline,stdout);
         }
         if(FD_ISSET(fileno(fd),&rset)){
             if(fgets(sendline,MAXLINE,fd)!=NULL){
                 write(sockfd,sendline,strlen(sendline));
+            }else{
+                //exit
+                stdineof=1;
+                shutdown(sockfd,SHUT_WR);
+                FD_CLR(fileno(fd),&rset);
+                continue;
             }
         }
     }
