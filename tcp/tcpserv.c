@@ -6,7 +6,10 @@
 #define	LISTENQ		1024	/* 2nd argument to listen() */
 #define	BUFFSIZE	8192	/* buffer size for reads and writes */
 
-
+/**
+ * select nio
+ *
+ **/
 void str_echo(int socketfd){
     ssize_t n;
     char buf[MAXLINE];

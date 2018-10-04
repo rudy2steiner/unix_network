@@ -1,8 +1,10 @@
 //
 // Created by root on 18-9-22.
+// cc   -I ..  nioserv.c
+// -I 指定头文件搜索路径
 //
 
-#include "../tcp/tcp.h"
+#include "tcp/tcp.h"
 #define	LISTENQ		1024	/* 2nd argument to listen() */
 #define	BUFFSIZE	8192	/* buffer size for reads and writes */
 
@@ -35,8 +37,9 @@ int main(int argc,char **argv)
     //signal(SIGCHLD,sig_chld);
     for(;;){
         rset=allset;
+        // rset is value-result arguments
         nready=select(maxfd+1,&rset,NULL,NULL,NULL);
-        if(FD_ISSET(listenfd,&rset)){ // neew client connection
+        if(FD_ISSET(listenfd,&rset)){ // new client connection
             clilen= sizeof(cliaddr);
             if((connfd=accept(listenfd,(SA *)&cliaddr,&clilen))<0){
                 // process interrupt

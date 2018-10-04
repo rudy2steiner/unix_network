@@ -2,8 +2,8 @@
 // Created by root on 18-9-19.
 //
 
-#include "../tcp/tcp.h"
-#include "../tcp/read.h"
+#include "tcp/tcp.h"
+#include "tcp/read.h"
 #include <math.h>
 
 int max(int a,int b){
